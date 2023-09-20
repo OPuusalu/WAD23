@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
+    <meta name="description" content="Cool description I just wrote for no reason.">
     <title>My Dashboard</title>
   </head>
   <body>
@@ -12,12 +13,12 @@
     </header>
     <section>
         <div>
-            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+            <img src="res/images/me.png" width="128" alt="My picture">
         </div>
         <div>
             <ul>
-                <li>Your name</li>
-                <li> A date following this format dd/mm/yyyy</li>
+                <li>Oliver Puusalu</li>
+                <li> A date following this format 20/09/2023</li>
                 <li> Software Engineering </li>
             </ul>
         </div>
@@ -69,16 +70,16 @@
         <br>
         <form action="" method="">
             <label for="courseTitle">Course Title:</label><br>
-            <input type="text" name="courseTitle" required><br>
+            <input type="text" aria-label="Title" name="courseTitle" required><br>
             <label for="semester">Semester:</label><br>
-            <select name="semester id="semester">
-                <option value="fall">Fall</option>
-                <option value="spring">Spring</option>
+            <select name="semester" id="semester">
+                <option aria-label="Fall" value="fall">Fall</option>
+                <option aria-label="Spring" value="spring">Spring</option>
             </select>
             <div>
                 <label for="attendance"><strong>Attendance:</strong></label><br>
-                <input type="radio" name="attendance" id="virtual" required><label for="virtual">Virtual attendance</label><br>
-                <input type="radio" name="attendance" id="physical" required><label for="physical">Physical attendance</label><br>
+                <input type="radio" aria-label="Virtual" name="attendance" id="virtual" required><label for="virtual">Virtual attendance</label><br>
+                <input type="radio" name="attendance" aria-label="Physical" id="physical" required><label for="physical">Physical attendance</label><br>
                 <input type="submit">
             </div>
         </form>
